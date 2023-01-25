@@ -35,7 +35,7 @@ class Store(Storage):
         count = 0
         for k, v in self.get_items().items():
             count += v
-        return count
+        return self.capacity - count
 
     def add(self, new_title, new_capacity, *args, **kwargs):
         """
