@@ -5,6 +5,7 @@ class Store(Storage):
     """
     Класс склада
     """
+
     def __init__(self, items, capacity=100):
         self.__items = items
         self.__capacity = capacity
@@ -15,6 +16,9 @@ class Store(Storage):
         Геттер для items
         :return:
         """
+        ###
+        """Дублирование кода. Метод полностью дублирует метод def get_items (self)"""
+        ###
         return self.__items
 
     @property
@@ -73,6 +77,10 @@ class Store(Storage):
         Функция получения словаря товар: количество
         :return:
         """
+
+        ###
+        """Дублирование кода. Метод полностью дублирует метод def items (self)"""
+        ###
         return self.items
 
     def get_unique_items_count(self):

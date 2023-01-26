@@ -31,6 +31,7 @@ class Storage(ABC):
     def get_items(self):
         pass
 
+
     @abstractmethod
     def get_unique_items_count(self):
         pass

@@ -5,6 +5,7 @@ class Shop(Store):
     """
     Класс магазина
     """
+
     def __init__(self, items, capacity=20):
         super().__init__(items, capacity)
 
@@ -19,3 +20,9 @@ class Shop(Store):
             if new_title not in self.items:
                 raise Exception
         return super().get_free_space()
+
+    ###
+    """ Hard Core 
+    Здесь значение self.get_unique_items_count() задается жестко, можно ввести переменную, что позволит гибко настраивать
+    кол-во свободных 'полок' в магазине и сделает задел для расширения """
+    ###

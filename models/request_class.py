@@ -10,6 +10,7 @@ class Request:
         self.__amount = int(decode_string[1])
         self.__product = decode_string[2]
 
+
     @property
     def from_(self):
         """
